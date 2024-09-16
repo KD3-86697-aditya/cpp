@@ -73,9 +73,11 @@ public:
     person(string name,string address,int day,int month,int year):birthdate(day,month,year)
     {
        this->name=name;
-       this->birthdate.setDay(day);
-       this->birthdate.setmonth(month);
-       this->birthdate.setyear(year);
+       this->address=address;
+       
+    //    this->birthdate.setDay(day);
+    //    this->birthdate.setmonth(month);
+    //    this->birthdate.setyear(year);
 
     }
 
@@ -101,7 +103,6 @@ public:
 
 };
 
-
 int main()
 {
 
@@ -116,7 +117,6 @@ person p3;
 cout<<"following  is initialized through accept function  : \n";
 p3.accept();
 p3.display();
-
 
 return 0 ;
 }
